@@ -28,6 +28,7 @@ function errorKey (index, source) {
 module.exports = {
   name: 'errors',
   error: function (payload) {
+    console.log(payload)
     if (payload.response) {
       if (payload.response.data) {
         if (typeof payload.response.data === 'string') {
